@@ -152,6 +152,8 @@ proxy-providers:
   SIMCARD1:
     type: file
     path: "./proxy_provider/simcard1.yaml"
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/proxy_provider/simcard1.yaml
+    interval: 3600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -159,6 +161,8 @@ proxy-providers:
   SIMCARD2:
     type: file
     path: "./proxy_provider/simcard2.yaml"
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/proxy_provider/simcard2.yaml
+    interval: 3600
     health-check:
       enable: true
       url: http://www.gstatic.com/generate_204
@@ -240,26 +244,38 @@ rule-providers:
     type: file
     behavior: domain
     path: ./rule_provider/rule-game.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-game.yaml
+    interval: 3600
   Sosmed:
     type: file
     behavior: domain
     path: ./rule_provider/rule-sosmed.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-sosmed.yaml
+    interval: 3600
   Stream:
     type: file
     behavior: domain
     path: ./rule_provider/rule-stream.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-stream.yaml
+    interval: 3600
   Olshop:
     type: file
     behavior: domain
     path: ./rule_provider/rule-olshop.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-olshop.yaml
+    interval: 3600
   Bank:
     type: file
     behavior: domain
     path: ./rule_provider/rule-bank.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-bank.yaml
+    interval: 3600
   Whatsapp:
     type: file
     behavior: domain
     path: ./rule_provider/rule-whatsapp.yaml
+    url: https://raw.githubusercontent.com/mwnsofficial/configuration-auto/main/rule_provider/rule-whatsapp.yaml
+    interval: 3600
 script:
   code: |
     def main(ctx, metadata):
